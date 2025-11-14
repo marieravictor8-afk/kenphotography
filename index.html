@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ken Studios | Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <section class="herohome">
+    <div class="row">
+      <h1>KEN STUDIOS</h1>
+      <p>Where design meets immagination</p>
+      <div style="width: 600px; margin: 0 auto;"><iframe src="carousel.html" style="width:100%; height:400px; border:none;" title="Carousel"></iframe></div>
+      
+    </div>
+  </section>
+
+  <!-- About section -->
+   <section id="about" style="padding: 5px;">
+    <h1 style="font-style: italic; color: rgb(199, 7, 103); text-align:center;">About us</h1>
+    <h4>Who are we?</h4>
+    <p>At Ken Studios, creativity meets imagination. We are a multidisciplinary hub specializing in photography, videography, graphic design, editing, and printing. Our passion lies in transforming ideas into powerful visuals—whether it’s capturing timeless moments through photography, producing cinematic videos, or designing impactful graphics and banners. Every project is approached with artistry, precision, and a commitment to excellence, ensuring that our clients’ stories are told in the most compelling way.</p>
+    <h4>Our mission</h4>
+    <p>Beyond delivering high-quality visuals, Ken Studios is dedicated to empowering communities through creativity, technology, and education. We believe that design and media are more than services—they are tools for connection, inspiration, and growth. By combining innovation with emotional impact, we aim to create experiences that resonate deeply and leave lasting impressions. Our mission is simple: to capture, design, and deliver visuals that inspire confidence, creativity, and connection.</p>
+   </section>
+
+<!-- Services section -->
+   <section id="services">
+    <h1 style="font-style: italic; color: rgb(199, 7, 103); text-align:center;">Our services</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="photography.html" target="_blank">
+        <div class="service-card">
+          <img src="static/images/photographer.jpeg" alt="" id="cardimage">
+          </a>
+          <h3>Photography services</h3>
+          <p>Capturing moments, creating memories—our photography turns life’s fleeting instants into timeless works of art.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="static/images/videography.jpeg" alt="" id="cardimage">
+          <h3>Videography services</h3>
+          <p>Bringing stories to life through motion—our videography captures emotion, detail, and atmosphere with cinematic precision.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <a href="graphics.html" target="_blank">
+          <img src="static/images/graphics.jpeg" alt="" id="cardimage">
+          </a>
+          <h3>Graphic designing</h3>
+          <p>Designs that speak louder than words—our graphics blend creativity and strategy to deliver visuals that captivate.</p>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!-- Contact us -->
+    <section class="contact-section d-flex align-items-center justify-content-center" id="contact">
+    <div class="container text-white">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="mb-3">CONTACT US</h2>
+          <p class="mb-4">Reach out to us for collaboration and more enquiries</p>
+        </div>
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Mail" required />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-warning">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- footer -->
+   <div id="footer-placeholder"></div>
+
+
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+  
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn
+</body>
+</html>
