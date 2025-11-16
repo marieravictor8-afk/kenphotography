@@ -71,15 +71,53 @@ textarea:focus {
 .btn{
     width: 100px;
 }
-.footer a:hover {
-  text-decoration: underline;
-  color: #3d6db1; 
+
+ /* Remove fixed height so content can expand naturally */
+.footer {
+  background-color: #945f0ed4;
+  border-radius: 15px;
+  padding: 20px 10px; /* add padding for breathing space */
+  height: auto; /* allow flexible height */
 }
-.footer{
-    background-color: #945f0ed4;
-    height: 300px;
-    border-radius: 15px;
+
+/* Ensure images scale properly */
+.footer img {
+  max-width: 100%;
+  height: auto;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer .row {
+    text-align: center; /* center content on tablets and smaller */
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 20px; /* spacing between stacked sections */
+  }
+
+  .footer h5, 
+  .footer h4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 15px 5px;
+  }
+
+  .footer small {
+    font-size: 12px; /* shrink copyright text */
+  }
+
+  .footer a {
+    display: inline-block;
+    margin: 5px; /* spacing for touch-friendly links */
+  }
+}
+
+
 /* photography */
 .hero-photo {
   height: 60vh;
@@ -264,6 +302,10 @@ body {
   outline: 2px solid #6aa9ff;
   outline-offset: 2px;
 }
+ 
+
+
+
 
 
 
