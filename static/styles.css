@@ -4,28 +4,127 @@
     margin-bottom: 100px;
     background-color: beige;
     border-radius: 10px;
+    padding: 20px;
+}
+.carousel-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-container {
+    padding: 0 5px;
+  }
 }
 .herohome h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5rem;
 }
 .herohome p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width: 768px) {
+    .herohome {
+        margin-bottom: 50px;
+        padding: 15px;
+    }
+    .herohome h1 {
+        font-size: 1.8rem;
+    }
+    .herohome p {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 576px) {
+    .herohome {
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    .herohome h1 {
+        font-size: 1.4rem;
+    }
+    .herohome p {
+        font-size: 0.85rem;
+    }
 }
 #about{
     margin-top: 200px;
     margin: 20px;
     padding: 20px;
     background-color: beige;
-    border-radius: 15px;   
+    border-radius: 15px;
+}
+#about h1 {
+    font-size: 2rem;
+}
+#about h4 {
+    font-size: 1.25rem;
+    margin-top: 15px;
+}
+#about p {
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    #about {
+        margin: 10px;
+        padding: 15px;
+        margin-top: 100px;
+    }
+    #about h1 {
+        font-size: 1.5rem;
+    }
+    #about h4 {
+        font-size: 1rem;
+    }
+    #about p {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 576px) {
+    #about {
+        margin: 5px;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    #about h1 {
+        font-size: 1.25rem;
+    }
+    #about h4 {
+        font-size: 0.95rem;
+    }
+    #about p {
+        font-size: 0.85rem;
+    }
 }
 .contact-section {
-  min-height: 100vh;
+  min-height: auto;
   background: linear-gradient(135deg, #80532d 70%, #ffd59a 100%);
   position: relative;
   padding: 60px 20px;
   overflow: hidden;
   margin-top: 50px;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 15px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 30px 10px;
+    margin-top: 20px;
+  }
 }
 .contact-section::before,
 .contact-section::after {
@@ -56,11 +155,19 @@ textarea {
   background-color: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 input:focus,
 textarea:focus {
   box-shadow: none;
   outline: none;
+}
+@media (max-width: 576px) {
+  input,
+  textarea {
+    font-size: 16px;
+  }
 }
 .btn {
   font-weight: bold;
@@ -70,6 +177,14 @@ textarea:focus {
 }
 .btn{
     width: 100px;
+    font-size: 0.95rem;
+}
+@media (max-width: 576px) {
+  .btn {
+    width: auto;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
 
  /* Remove fixed height so content can expand naturally */
@@ -118,17 +233,6 @@ textarea:focus {
 }
 
 
-/* photography */
-.hero-photo {
-  height: 60vh;
-  background: url('hero-photo.jpg') center/cover no-repeat;
-  background-color: #0A0F2C;
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfaf6;
-  color: #3e2c23;
-}
 .hero1 {
   background: linear-gradient(rgba(92,64,51,0.7), rgba(92,64,51,0.7)), 
               url('images/hero.jpg') center/cover no-repeat;
@@ -137,16 +241,61 @@ body {
   text-align: center;
   background: url("images/bg5.jpeg") no-repeat center/cover;
 }
+@media (max-width: 768px) {
+  .hero1 {
+    padding: 50px 15px;
+  }
+}
+@media (max-width: 576px) {
+  .hero1 {
+    padding: 30px 10px;
+  }
+}
 .service-card {
   background-color: #f5ebe0;
   border: none;
   transition: transform 0.3s;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 .service-card:hover {
   transform: scale(1.05);
 }
 .service-card img {
   border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+.service-card p {
+  font-size: 0.95rem;
+}
+@media (max-width: 768px) {
+  .service-card {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .service-card {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  .service-card h3 {
+    font-size: 1rem;
+  }
+  .service-card p {
+    font-size: 0.8rem;
+  }
 }
 .booking-section {
   background-color: #e6ccb2;
@@ -167,11 +316,22 @@ body {
   padding: 100px 20px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .hero2 {
+    padding: 50px 15px;
+  }
+}
+@media (max-width: 576px) {
+  .hero2 {
+    padding: 30px 10px;
+  }
+}
 .service-card {
   background-color: #f5ebe0;
   border: none;
   transition: transform 0.3s;
 }
+
 .service-card:hover {
   transform: scale(1.05);
 }
@@ -185,6 +345,16 @@ body {
   padding: 50px;
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .booking-section {
+    padding: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .booking-section {
+    padding: 20px;
+  }
+}
 
 .btn-brown {
   background-color: #5c4033;
@@ -195,8 +365,21 @@ body {
   background-color: #3e2c23;
 }
 #cardimage{
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  #cardimage {
+    min-height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  #cardimage {
+    min-height: 150px;
+  }
 }
 
 /* navbar */
@@ -302,7 +485,49 @@ body {
   outline: 2px solid #6aa9ff;
   outline-offset: 2px;
 }
- 
+
+/* General responsive utilities */
+@media (max-width: 992px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  section {
+    padding: 30px 15px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  h2 {
+    font-size: 1.25rem !important;
+  }
+  h3 {
+    font-size: 1rem !important;
+  }
+  section {
+    padding: 20px 10px !important;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .row {
+    margin: 0;
+  }
+}
 
 
 
